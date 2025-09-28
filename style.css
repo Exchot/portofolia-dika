@@ -277,9 +277,34 @@ img {
 }
 
 
+#kontak {
+  padding: 24px;
+  background-color: #eaeaea;
+  border-radius: 12px;
+  margin: 16px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+#kontak h2 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+}
+
+#kontak a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#kontak a:hover {
+  text-decoration: underline;
+}
+
+
 /* Utility */
 .text-align {
   text-align: justify;
 }
+
 
 
