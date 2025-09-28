@@ -182,8 +182,18 @@ img {
   display: block;
 }
 
+@media (max-width: 600px) {
+  .designer-credit {
+    max-width: 95vw;
+    font-size: 15px;
+    padding: 10px 8px;
+    border-radius: 18px;
+  }
+}
+
 /* Utility */
 .text-align {
   text-align: justify;
 }
+
 
