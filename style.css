@@ -192,109 +192,94 @@ img {
   display: block;
 }
 
-/* Layout dasar */
+/* Reset dan layout dasar */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Navigasi responsif */
-.navbar ul {
+/* Navigasi */
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
   background-color: #333;
 }
 
-.navbar li {
+nav a {
   flex: 1 1 auto;
   text-align: center;
-}
-
-.navbar a {
-  display: block;
   padding: 12px;
   color: white;
   text-decoration: none;
 }
 
-.navbar a:hover {
+nav a:hover {
   background-color: #555;
+}
+
+/* Branding */
+#branding {
+  display: block;
+  margin: 16px auto;
+  padding: 8px 16px;
+  background-color: #444;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* Konten utama */
 main {
   padding: 16px;
+  max-width: 800px;
+  margin: auto;
 }
 
-/* Galeri gambar */
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
-.image-row img {
-  flex: 1 1 45%;
+/* Gambar */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
   border-radius: 8px;
 }
 
-/* AI Chat Box */
-#ai-bot {
-  max-width: 100%;
-  margin: 24px auto;
-  padding: 16px;
-  background: #474742;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px #0002;
-}
-
-/* Media Query untuk HP */
+/* Responsif untuk HP */
 @media (max-width: 600px) {
   h1, h2 {
     font-size: 1.4em;
     text-align: center;
   }
 
-  .navbar ul {
+  nav {
     flex-direction: column;
   }
 
-  .image-row img {
-    flex: 1 1 100%;
+  nav a {
+    padding: 10px;
+    font-size: 14px;
   }
 
-  .highlight p {
-    font-size: 1em;
-    padding: 8px;
+  main {
+    padding: 12px;
   }
 
-  #ai-input {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  #ai-bot button {
-    width: 100%;
+  #branding {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
-
 
 
 /* Utility */
 .text-align {
   text-align: justify;
 }
+
 
