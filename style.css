@@ -141,16 +141,6 @@ h2 {
     transform: translateX(40px) scale(1.05);
     box-shadow: 0 4px 26px rgba(71, 53, 53, 0.2);
   }
-  
-/* Efek scale pada .highlight jika .scale-april di-hover */
-.scale-april {
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.scale-april:focus {
-  transform: scale(1.05);
-}
 
 /* Jika ingin border dan background ikut membesar */
 .highlight:hover {
@@ -196,3 +186,4 @@ img {
 .text-align {
   text-align: justify;
 }
+
