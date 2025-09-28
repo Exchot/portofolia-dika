@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Everyone</title>
+  <link rel="stylesheet" href="aos/aos.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .indent {
+      text-indent: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>Halo semua</h1>
+  </ header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Beranda</a></li>
+      <li><a href="#"><i class="fas fa-user"></i> Tentang</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Kontak</a></li>
+    </ul>
+  </nav>
+
+  <p class="designer-credit">Web by design Indika M.W</p>
+
+  <main>
+    <section>
+      <h2>Pendakian Mt.Prau</h2>
+    </section>
+
+    <section class="highlight">
+      <p class="indent scale-april">
+        Tanggal 7 Agustus 2025 saya melakukan pendakian di gunung prau. Disinilah pengalaman pendakian gunung terseru saya. Dapat menginjakan kaki di gunung Prau. Kami yang awalnya berencana duo hiking akhirnya ada 1 kelompok lain utnuk bergabung bersama mereka yang berasal dari Desa Pecalungan, jawa Tengah.
+      </p>
+    </section>
+
+    <img data-aos="flip-up" src="images/gambar1.png" alt="Pemandangan 1">
+
+    <section class="highlight">
+      <p class="indent translatex">
+        Pendakian di awali jam tengah 3 pagi, sebelum memulai kami berdoa terlebih dahulu dan tidak lupa kami 
+        mengecek anggota lain apakah perlengkapan sudah siap tidak.
+      </p>
+      <p class="indent translatex form left">
+        Untuk perjalanan dari basecamp ke pos 1 butuh waktu setengah jam. Kami juga sering istirahat karena trek perjalanan yang cukup panjang dan menanjak.
+        tidak lupa kami juga saling membantu satu sama lain. Agar tidak terjadi seperti ketinggalan rombongan. Kami juga berfoto-foto di beberapa spot yang indah. Kami tak henti-hentinya kagum karena pemandangan yang sangat indah.
+      </p>
+    </section>
+
+    <img data-aos="fade-right" src="images/gambar2.jpg" alt="Pemandangan 2">
+
+    <section class="highlight">
+      <p class="indent translatex">
+        Untuk cuaca pendakian ini cerah jadi kami tidak khawatir akan hujan akan tetapi tetap waspada saja. City light di kota Wonosobo sangat indah dari atas sini.
+      </p>
+      <p class="indent translatex form left">
+        Di tengah perjalanan kami berhenti agak lama untuk mengsisi energi kembali. Pos 1 ini sangat ramai sekali. Banyak pendaki yang beristirahat di pos ini. Setelah beristirahat kami melanjutkan perjalanan ke pos 2. Kami di percabangan pos 2 itu kami berunding sebentar untuk menentukan jalan yang akan dialalui
+        antara lewat jalur lama atau jalur baru. Akhirnya kami memutuskan untuk lewat jalur lama karena dirasa lebih cepat.
+      </p>
+    </section>
+
+    
+    <div class="image-row">
+    <img data-aos="fade-right" src="images/gambar3.jpg" alt="Pemandangan 3">
+    <img data-aos="fade-left" src="images/gambar4.jpg" alt="Pemandangan 3">
+    </div>
+
+
+<section class="highlight">
+      <p class="indent translatex">
+        Menuju perjalanan untuk ke pos 3 itu jalannya menantang dan cukup menyenangkan karena banyak tanjakan sehingga membuat kami sering berhenti sejenak rehat. 
+        tapi saat beramai-ramai seperti ini menyenangkan dan tidak mudah lelah.
+      </p>
+      <p class="indent translatex form left">
+        Sesampainya di pos 3 kami juga bertemu banyak orang mereka sedang berisitirahat di pos ini cukup lama. Pos 3 ini view pemandangan belum cukup kelihatan hanya sedikit. Setelah cukup berisitirahat kami lanjut lagi menuju puncak mulai lanjut jam tengah 5.
+      </p>
+    </section>
+
+
+    <img data-aos="flip-left" src="images/gambar4.jpg" alt="Pemandangan 4">
+  </main>
+
+  <div id="ai-bot" style="max-width:400px;margin:40px auto;padding:16px;background:#474742;border-radius:12px;box-shadow:0 2px 8px #0002;">
+  <strong>AI  Sederhana</strong>
+  <div id="ai-chat" style="margin:12px 0;min-height:40px;color:#fff;"></div>
+  <input id="ai-input" type="text" placeholder="Tanya: Apa itu gunung?" style="width:80%;padding:6px;border-radius:6px;border:1px solid #ccc;">
+  <button onclick="aiAsk()" style="padding:6px 12px;border-radius:6px;background:#3e688f;color:#fff;border:none;">Tanya</button>
+</div>
+
+<script>
+const aiQA = [
+  {
+    tanya: ["gunung"],
+    jawab: "Gunung adalah bagian permukaan bumi yang menjulang lebih tinggi dari daerah sekitarnya, biasanya terbentuk oleh aktivitas tektonik atau vulkanik."
+  },
+  {
+    tanya: ["pendakian"],
+    jawab: "Pendakian adalah aktivitas berjalan kaki menuju puncak gunung atau bukit, biasanya untuk rekreasi, olahraga, atau penelitian."
+  },
+  {
+    tanya: ["prau", "mt. prau", "gunung prau"],
+    jawab: "Gunung Prau adalah salah satu gunung di Jawa Tengah dengan ketinggian sekitar 2.565 mdpl, terkenal dengan pemandangan sunrise yang indah."
+  },
+  {
+    tanya: ["tips", "persiapan"],
+    jawab: "Beberapa tips pendakian: siapkan fisik, bawa perlengkapan lengkap (jaket, makanan, air, P3K), cek cuaca, dan jangan lupa berdoa sebelum berangkat."
+  },
+  {
+    tanya: ["basecamp"],
+    jawab: "Basecamp adalah tempat awal pendakian, biasanya digunakan untuk registrasi, istirahat, dan persiapan sebelum naik gunung."
+  },
+  {
+    tanya: ["pos", "pos 1", "pos 2", "pos 3"],
+    jawab: "Pos adalah titik-titik perhentian di jalur pendakian. Biasanya digunakan untuk istirahat dan orientasi jalur."
+  },
+  {
+    tanya: ["jalur lama", "jalur baru"],
+    jawab: "Jalur lama biasanya lebih cepat namun lebih menanjak, sedangkan jalur baru lebih landai namun lebih jauh. Pilih sesuai kemampuan tim."
+  },
+  {
+    tanya: ["cuaca", "hujan", "cerah"],
+    jawab: "Cuaca sangat penting saat pendakian. Selalu cek prakiraan cuaca sebelum berangkat dan siapkan jas hujan jika diperlukan."
+  },
+  {
+    tanya: ["city light", "wonosobo"],
+    jawab: "City light Wonosobo adalah pemandangan lampu kota yang terlihat indah dari atas Gunung Prau, terutama saat malam hari."
+  },
+  {
+    tanya: ["foto", "spot foto"],
+    jawab: "Beberapa spot foto terbaik di Gunung Prau adalah area puncak, padang rumput, dan saat sunrise. Jangan lupa abadikan momen!"
+  },
+  {
+    tanya: ["lelah", "capek"],
+    jawab: "Jika lelah saat pendakian, istirahatlah sejenak, minum air, dan jangan memaksakan diri. Pendakian bukan lomba, utamakan keselamatan."
+  },
+  {
+    tanya: ["rombongan", "teman"],
+    jawab: "Pendakian bersama rombongan lebih aman dan menyenangkan. Selalu jaga komunikasi dan jangan berjalan sendiri."
+  },
+  {
+    tanya: ["puncak"],
+    jawab: "Puncak Gunung Prau adalah tujuan utama pendakian, dari sini kamu bisa melihat panorama pegunungan Dieng dan sunrise yang menakjubkan."
+  },
+  {
+    tanya: ["indika", "desain", "web ini"],
+    jawab: "Web ini didesain oleh Indika M.W untuk berbagi pengalaman pendakian dan tips seputar Gunung Prau."
+  }
+];
+
+function aiAsk() {
+  const input = document.getElementById('ai-input').value.trim().toLowerCase();
+  let jawab = "Maaf, saya hanya bisa menjawab seputar pendakian dan web ini.";
+  for (const qa of aiQA) {
+    if (qa.tanya.some(keyword => input.includes(keyword))) {
+      jawab = qa.jawab;
+      break;
+    }
+  }
+  document.getElementById('ai-chat').innerText = jawab;
+}
+</script>
+
+  <script src="aos/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false
+    });
+  </script>
+
+</script>
+</body>
+</html>
