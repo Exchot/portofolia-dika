@@ -165,11 +165,54 @@ img {
   box-shadow: 0 4px 8px rgba(10, 10, 10, 0.1);
 }
 
+.image-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 32px auto;
+  width: 100%;
+}
+
+.image-row img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.1);
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .designer-credit {
+    max-width: 95vw;
+    font-size: 15px;
+    padding: 10px 8px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  img {
+    max-width: 90vw;
+    width: 90vw;
+    margin: 16px auto 32px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .image-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
 
 /* Utility */
 .text-align {
   text-align: justify;
 }
+
 
 
 
