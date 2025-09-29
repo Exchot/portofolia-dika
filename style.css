@@ -175,8 +175,8 @@ img {
 }
 
 .image-row img {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
+  max-width: 900%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(10, 10, 10, 0.1);
@@ -212,6 +212,7 @@ img {
 .text-align {
   text-align: justify;
 }
+
 
 
 
